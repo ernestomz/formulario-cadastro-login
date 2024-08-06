@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="reset.css">
+
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #5fa8d2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            width: 100%;
+            min-width: 28.75em;
+            max-width: 35em;
+            padding: 1em;
+            background-color: white;
+            box-shadow: 3px 4px 0.5em black;
+        }
+
+        input, label {
+            display: block;
+            width: 95%;
+            margin-top: 1em;
+            outline: 0;
+            border: 0;
+        }
+
+        legend {
+            font-size: 2em;
+            letter-spacing: .1em;
+            font-weight: lighter;
+            padding-top: .7em;
+            padding-bottom: .3em;
+        }
+
+        label {
+            text-transform: uppercase;
+            opacity: 0.5;
+            margin-top: 0.9em
+        }
+
+        input {
+            border-bottom: 2px solid #87ceeb;
+            margin-top: 1.3em;
+            margin-bottom: 1.3em;
+            transition: all 0.3s;
+            font-size: 1.2em;
+        }
+
+        input:focus {
+            outline: 2px solid #87ceeb;
+            padding-left: 0.4em;
+            transition: all 0.3s;
+            border-radius: 0.2em;
+        }
+
+        button {
+            background-color: #5fa8d2;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-radius: .2em;
+            padding: .4em 1em;
+            text-transform: uppercase;
+            box-shadow: 0.2em 0 0.4em black;
+        }
+
+        .cadastro {
+            text-decoration: none;
+            margin-left: .5em;
+            text-transform: uppercase;
+            color: #87ceeb;
+            font-size: 1.2em;
+        }
+
+        .senha {
+            margin-left: 6em;
+            text-decoration: none;
+            color: black;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Login</legend>
+
+            <label for="user">Usuário</label>
+            <input type="text" name="user" id="user" required>
+
+            <label for="pass">Senha</label>
+            <input type="password" name="pass" id="pass" required>
+
+            <button>Login</button>
+            <a href="cadastro.html" class="cadastro">Cadatra-se</a>
+            <a href="" class="senha">Esqueci minha senha</a>
+        </fieldset>
+    </form>
+</body>
+</html>
